@@ -1,5 +1,7 @@
 /**
  * 填充字符串
+ * @function leftFill 左填充
+ * @function rightFill 右填充
  */
 export default {
   /**
