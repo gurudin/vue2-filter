@@ -1,6 +1,12 @@
 <template>
-  <div class="container-fluid" id="app">   
-    
+  <div class="container" id="app">
+    <h4>Strings</h4>
+    <p>
+      <kbd v-html="leftFill"></kbd> => <code>{{2 | leftFill(0, 3)}}</code>
+    </p>
+    <p>
+      <kbd v-html="rightFill"></kbd> => <code>{{1 | rightFill(0, 3)}}</code>
+    </p>
   </div>
 </template>
 
@@ -8,7 +14,10 @@
 export default {
   name: 'App',
   data() {
-    
+    return {
+      leftFill: '{{2 | leftFill(0, 3)}}',
+      rightFill: '{{1 | rightFill(0, 3)}}',
+    };
   }
 }
 </script>
