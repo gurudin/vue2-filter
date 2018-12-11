@@ -6,6 +6,8 @@
     <p><kbd v-html="toUpperCase"></kbd> => <code>{{'gurudin' | toUpperCase}}</code></p>
     <p><kbd v-html="toLowerCase"></kbd> => <code>{{'GURUDIN' | toLowerCase}}</code></p>
     <p><kbd v-html="toUcfirst"></kbd> => <code>{{'gurudin' | toUcfirst}}</code></p>
+    <p><kbd v-html="toLcfirst"></kbd> => <code>{{'GURUDIN' | toLcfirst}}</code></p>
+    <p><kbd v-html="truncate"></kbd> => <code>{{'Praeterea iter est quasdam res quas ex communi.' | truncate}}</code></p>
   </div>
 </template>
 
@@ -19,6 +21,8 @@ export default {
       toUpperCase: "{{'gurudin' | toUpperCase}}",
       toLowerCase: "{{'GURUDIN' | toUpperCase}}",
       toUcfirst: "{{'gurudin' | toUcfirst}}",
+      toLcfirst: "{{'GURUDIN' | toLcfirst}}",
+      truncate: "{{'Praeterea iter est quasdam res quas ex communi.' | truncate}}",
     };
   }
 }
