@@ -5,11 +5,13 @@ import App from './App'
 // -------------
 import util from "./util/index";
 import strings from './strings/index'
+import array from "./array/index";
 
-var filters = util.extend({strings});
+var filters = util.extend({ strings, array});
 for (const key in filters) {
   Vue.filter(key, filters[key]);
 }
+Vue.prototype.filters = filters;
 // -------------
 Vue.config.productionTip = false
 
